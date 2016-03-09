@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SandySpringStudyBuddy
 //
-//  Created by Olivia Dilworth on 3/9/16.
+//  Created by Olivia Dilworth on 3/15/16.
 //  Copyright © 2016 SSFS. All rights reserved.
 //
 
