@@ -1,25 +1,21 @@
 //
-//  ViewController.swift
+//  SandySpringStuddyBuddy.swift
 //  SandySpringStudyBuddy
 //
-//  Created by Olivia Dilworth on 3/15/16.
+//  Created by Olivia Dilworth on 4/27/16.
 //  Copyright © 2016 SSFS. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SandySpringStuddyBuddy: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
 }
-
