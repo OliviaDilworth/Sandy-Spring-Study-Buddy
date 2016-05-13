@@ -7,19 +7,28 @@
 //
 
 import Foundation
+import UIKit
 
 class Tutor {
+
     
-    let name: String
-    let grade: Int
-    let email: String
+    //Header variables
+    var name = ""
+    var grade = ""
+    var email = ""
     
-    init(name: String, grade: Int, email: String) {
-        self.name = name
-        self.grade = grade
-        self.email = email
-    }
+    //Schedule variables
+    var class1 = ""
+    var class2 = ""
+    var class3 = ""
+    var class4 = ""
+    var class5 = ""
+    var class6 = ""
+    var class7 = ""
     
+    var subject = ""
+    
+    var proPic = UIImage()
     
 }
 
@@ -27,5 +36,5 @@ class Tutor {
 //Name, grade, email
 //Parts needed to build schedule:
 //Classes 1-7
-//Special part:
+//Special parts:
 //Photo, Best Subject

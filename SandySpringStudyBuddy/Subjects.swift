@@ -14,6 +14,8 @@ class Subjects: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var pickerData: [String] = [String]()
     
+    var tutor = Tutor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +25,6 @@ class Subjects: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
         //Setting subjects as data
         pickerData = ["Art", "English", "French", "History", "Math", "Spanish", "Science"]
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +45,19 @@ class Subjects: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     //Putting data into picker
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tutor.subject = pickerData[row]
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "saveSubject" {
+            if let destination = segue.destinationViewController as? Schedule {
+                destination.tutor = self.tutor
+            }
+        }
     }
 
 }

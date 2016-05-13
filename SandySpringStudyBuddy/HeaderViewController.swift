@@ -16,18 +16,27 @@ class HeaderViewController: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
     
-    
+    var tutor = Tutor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        tutor.name = nameTextField.text!
+        tutor.grade = gradeTextField.text!
+        tutor.email = emailTextField.text!
+        if segue.identifier == "saveHeader" {
+            if let destination = segue.destinationViewController as? Subjects {
+                destination.tutor = self.tutor
+            }
+        }
+    }
 
 
 }

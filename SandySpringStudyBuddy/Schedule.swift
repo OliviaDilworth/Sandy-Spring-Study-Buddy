@@ -10,22 +10,19 @@ import UIKit
 
 class Schedule: UIViewController, UITextViewDelegate {
     
-    @IBOutlet var class1: UITextField!
-
-    @IBOutlet var class2: UITextField!
-
-    @IBOutlet var class3: UITextField!
+    @IBOutlet var classA: UITextField!
+    @IBOutlet var classB: UITextField!
+    @IBOutlet var classC: UITextField!
+    @IBOutlet var classD: UITextField!
+    @IBOutlet var classE: UITextField!
+    @IBOutlet var classF: UITextField!
+    @IBOutlet var classG: UITextField!
     
-    @IBOutlet var class4: UITextField!
-    
-    @IBOutlet var class5: UITextField!
-    
-    @IBOutlet var class6: UITextField!
-    
-    @IBOutlet var class7: UITextField!
+    var tutor = Tutor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(tutor.subject)
     }
     
     @IBAction func saveClasses(sender: AnyObject) {
@@ -34,6 +31,23 @@ class Schedule: UIViewController, UITextViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        tutor.class1 = classA.text!
+        tutor.class2 = classB.text!
+        tutor.class3 = classC.text!
+        tutor.class4 = classD.text!
+        tutor.class5 = classE.text!
+        tutor.class6 = classF.text!
+        tutor.class7 = classG.text!
+        
+        if segue.identifier == "saveSchedule" {
+            if let destination = segue.destinationViewController as? profilePicture {
+                destination.tutor = self.tutor
+            }
+        }
+    }
+
     
     
 }

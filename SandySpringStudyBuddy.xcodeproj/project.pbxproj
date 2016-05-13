@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B6839221CD12FE60006AFFD /* SandySpringStuddyBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */; };
 		1B6839241CD1318A0006AFFD /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6839231CD1318A0006AFFD /* Subjects.swift */; };
-		1B8170231CDA3D960070F6FD /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8170221CDA3D960070F6FD /* ProfilePicture.swift */; };
+		1B8170231CDA3D960070F6FD /* profilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8170221CDA3D960070F6FD /* profilePicture.swift */; };
 		1B8B925B1C9079FA000A3C36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B925A1C9079FA000A3C36 /* AppDelegate.swift */; };
 		1B8B92601C9079FA000A3C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8B925E1C9079FA000A3C36 /* Main.storyboard */; };
 		1B8B92621C9079FA000A3C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8B92611C9079FA000A3C36 /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandySpringStuddyBuddy.swift; sourceTree = "<group>"; };
 		1B6839231CD1318A0006AFFD /* Subjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
-		1B8170221CDA3D960070F6FD /* ProfilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
+		1B8170221CDA3D960070F6FD /* profilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilePicture.swift; sourceTree = "<group>"; };
 		1B8B92571C9079FA000A3C36 /* SandySpringStudyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandySpringStudyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8B925A1C9079FA000A3C36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B8B925F1C9079FA000A3C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				1B92C9761CD2963800B54096 /* Profile.swift */,
 				1BC3396C1CDD0BBA009FBB8C /* Tutor.swift */,
 				1BC3396E1CDD0C7D009FBB8C /* HeaderViewController.swift */,
-				1B8170221CDA3D960070F6FD /* ProfilePicture.swift */,
+				1B8170221CDA3D960070F6FD /* profilePicture.swift */,
 				1B6839231CD1318A0006AFFD /* Subjects.swift */,
 				1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */,
 				1B8B925A1C9079FA000A3C36 /* AppDelegate.swift */,
@@ -274,7 +274,7 @@
 				1BC3396D1CDD0BBA009FBB8C /* Tutor.swift in Sources */,
 				1B6839241CD1318A0006AFFD /* Subjects.swift in Sources */,
 				1B92C9771CD2963800B54096 /* Profile.swift in Sources */,
-				1B8170231CDA3D960070F6FD /* ProfilePicture.swift in Sources */,
+				1B8170231CDA3D960070F6FD /* profilePicture.swift in Sources */,
 				1BC3396F1CDD0C7D009FBB8C /* HeaderViewController.swift in Sources */,
 				1B6839221CD12FE60006AFFD /* SandySpringStuddyBuddy.swift in Sources */,
 				1B8B925B1C9079FA000A3C36 /* AppDelegate.swift in Sources */,

@@ -8,11 +8,13 @@
 
 import UIKit
 
-class profilePicture: UIViewController, UIPickerViewDelegate {
+class profilePicture: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var profilePicture: UIImageView!
     
     let imagePicker = UIImagePickerController()
+    
+    var tutor = Tutor()
     
     @IBAction func chooseImage(sender: UIButton) {
         imagePicker.allowsEditing = false
@@ -23,17 +25,15 @@ class profilePicture: UIViewController, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //imagePicker.delegate = self
+        imagePicker.delegate = self
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             profilePicture.contentMode = .ScaleAspectFit
             profilePicture.image = pickedImage
+            profilePicture.image = tutor.proPic
+        
         }
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -42,5 +42,15 @@ class profilePicture: UIViewController, UIPickerViewDelegate {
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if segue.identifier == "savePicture" {
+            if let destination = segue.destinationViewController as? Profile {
+                destination.tutor = self.tutor
+            }
+        }
+    }
+
 }
