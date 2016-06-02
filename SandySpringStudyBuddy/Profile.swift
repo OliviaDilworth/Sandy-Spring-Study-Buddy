@@ -30,20 +30,24 @@ class Profile: UIViewController {
     @IBOutlet var classSixLabel: UILabel!
     @IBOutlet var classSevenLabel: UILabel!
     
+    //Creating tutor variable that calls the Tutor class
     var tutor = Tutor()
-    var header = HeaderViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Calling info created in HeaderViewController class that was sent and saved to Tutor class
         self.nameLabel.text = tutor.name
         self.gradeLabel.text = "Grade \(tutor.grade)"
         self.emailLabel.text = tutor.email
         
+        //Calling image chosen in profilePicture class that was sent and saved to Tutor class
         self.profilePictureView.image = tutor.proPic
         
+        //Calling subject chosen in Subjects class that was sent and saved to Tutor class
         self.subjectLabel.text = "Best Subject: \(tutor.subject)"
         
+        //Calling classes created in Schedule class that was sent and saved to Tutor class
         self.classOneLabel.text = "A: \(tutor.class1)"
         self.classTwoLabel.text = "B: \(tutor.class2)"
         self.classThreeLabel.text = "C: \(tutor.class3)"
@@ -53,6 +57,10 @@ class Profile: UIViewController {
         self.classSevenLabel.text = "G: \(tutor.class7)"
     }
 
+    @IBAction func saveProfile(sender: AnyObject) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

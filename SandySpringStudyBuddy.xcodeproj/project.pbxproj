@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3C07BE1CECE993008D3736 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C07BD1CECE993008D3736 /* LogIn.swift */; };
 		1B6839221CD12FE60006AFFD /* SandySpringStuddyBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */; };
 		1B6839241CD1318A0006AFFD /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6839231CD1318A0006AFFD /* Subjects.swift */; };
 		1B8170231CDA3D960070F6FD /* profilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8170221CDA3D960070F6FD /* profilePicture.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B3C07BD1CECE993008D3736 /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandySpringStuddyBuddy.swift; sourceTree = "<group>"; };
 		1B6839231CD1318A0006AFFD /* Subjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
 		1B8170221CDA3D960070F6FD /* profilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilePicture.swift; sourceTree = "<group>"; };
@@ -108,13 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				1B8B925E1C9079FA000A3C36 /* Main.storyboard */,
-				1BF38B511CDBA2D80010D3D2 /* Schedule.swift */,
-				1B92C9761CD2963800B54096 /* Profile.swift */,
-				1BC3396C1CDD0BBA009FBB8C /* Tutor.swift */,
-				1BC3396E1CDD0C7D009FBB8C /* HeaderViewController.swift */,
-				1B8170221CDA3D960070F6FD /* profilePicture.swift */,
-				1B6839231CD1318A0006AFFD /* Subjects.swift */,
+				1B3C07BD1CECE993008D3736 /* LogIn.swift */,
 				1B6839211CD12FE60006AFFD /* SandySpringStuddyBuddy.swift */,
+				1BC3396E1CDD0C7D009FBB8C /* HeaderViewController.swift */,
+				1B6839231CD1318A0006AFFD /* Subjects.swift */,
+				1BF38B511CDBA2D80010D3D2 /* Schedule.swift */,
+				1B8170221CDA3D960070F6FD /* profilePicture.swift */,
+				1BC3396C1CDD0BBA009FBB8C /* Tutor.swift */,
+				1B92C9761CD2963800B54096 /* Profile.swift */,
 				1B8B925A1C9079FA000A3C36 /* AppDelegate.swift */,
 				1B8B92611C9079FA000A3C36 /* Assets.xcassets */,
 				1B8B92661C9079FA000A3C36 /* Info.plist */,
@@ -208,6 +211,7 @@
 				TargetAttributes = {
 					1B8B92561C9079FA000A3C36 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9K76FZ3Z54;
 					};
 					1B8B926A1C9079FA000A3C36 = {
 						CreatedOnToolsVersion = 7.2;
@@ -277,6 +281,7 @@
 				1B8170231CDA3D960070F6FD /* profilePicture.swift in Sources */,
 				1BC3396F1CDD0C7D009FBB8C /* HeaderViewController.swift in Sources */,
 				1B6839221CD12FE60006AFFD /* SandySpringStuddyBuddy.swift in Sources */,
+				1B3C07BE1CECE993008D3736 /* LogIn.swift in Sources */,
 				1B8B925B1C9079FA000A3C36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,10 +416,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SandySpringStudyBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.SandySpringStudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SandySpringStudyBuddy/SandySpringStudyBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -422,10 +433,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SandySpringStudyBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ssfs.SandySpringStudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SandySpringStudyBuddy/SandySpringStudyBuddy-Bridging-Header.h";
 			};
 			name = Release;
 		};

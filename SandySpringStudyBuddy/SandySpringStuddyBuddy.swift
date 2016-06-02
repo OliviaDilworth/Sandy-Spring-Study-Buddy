@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Class linked to main storyboard (welcome page)
 class SandySpringStuddyBuddy: UIViewController {
 
     override func viewDidLoad() {

@@ -10,6 +10,7 @@ import UIKit
 
 class Schedule: UIViewController, UITextViewDelegate {
     
+    //Outlets to Schedule ViewController
     @IBOutlet var classA: UITextField!
     @IBOutlet var classB: UITextField!
     @IBOutlet var classC: UITextField!
@@ -18,21 +19,21 @@ class Schedule: UIViewController, UITextViewDelegate {
     @IBOutlet var classF: UITextField!
     @IBOutlet var classG: UITextField!
     
+    //Creating tutor variable that calls the Tutor class
     var tutor = Tutor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(tutor.subject)
-    }
-    
-    @IBAction func saveClasses(sender: AnyObject) {
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    //Method to send information to next view controller via the segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        //variables in Tutor class (called by tutor variable) = schedule text in this class
         tutor.class1 = classA.text!
         tutor.class2 = classB.text!
         tutor.class3 = classC.text!
@@ -41,7 +42,9 @@ class Schedule: UIViewController, UITextViewDelegate {
         tutor.class6 = classF.text!
         tutor.class7 = classG.text!
         
+        //Sending information to Tutor class by calling and then using the segue, passing the information on to the next ViewController
         if segue.identifier == "saveSchedule" {
+            //Setting destination for information as Tutor class
             if let destination = segue.destinationViewController as? profilePicture {
                 destination.tutor = self.tutor
             }

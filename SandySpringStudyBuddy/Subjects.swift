@@ -10,10 +10,13 @@ import UIKit
 
 class Subjects: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    //Outlet connection to picker view
     @IBOutlet var subjects: UIPickerView!
 
+    //pickerData variable that will create list of subjects
     var pickerData: [String] = [String]()
     
+    //Creating tutor variable that calls the Tutor class
     var tutor = Tutor()
     
     override func viewDidLoad() {
@@ -51,9 +54,12 @@ class Subjects: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         tutor.subject = pickerData[row]
     }
     
+    //Method to send information to next view controller via the segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        //Sending information to Tutor class by calling and then using the segue, passing the information on to the next ViewController
         if segue.identifier == "saveSubject" {
+            //Setting destination for information as Tutor class
             if let destination = segue.destinationViewController as? Schedule {
                 destination.tutor = self.tutor
             }

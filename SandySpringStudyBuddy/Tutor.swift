@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
+//Class that saves a tutor's information, which is sent by segues
 class Tutor {
-
     
     //Header variables
     var name = ""
@@ -26,15 +26,10 @@ class Tutor {
     var class6 = ""
     var class7 = ""
     
+    //Schedule variable
     var subject = ""
     
+    //Profile picture variable
     var proPic = UIImage()
     
 }
-
-//Parts needed for basic header:
-//Name, grade, email
-//Parts needed to build schedule:
-//Classes 1-7
-//Special parts:
-//Photo, Best Subject
